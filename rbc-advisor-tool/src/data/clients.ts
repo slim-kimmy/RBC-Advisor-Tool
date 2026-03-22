@@ -65,7 +65,7 @@ export const MOCK_CLIENTS: Client[] = [
     age: 67,
     occupation: 'Retired Professor (Economics, U of T)',
     maritalStatus: 'Widowed (1 adult child)',
-    background: 'Jewish, Ashkenazi heritage',
+    background: 'Jewish',
     city: 'North York',
     province: 'ON',
     email: 'm.goldstein@email.com',
