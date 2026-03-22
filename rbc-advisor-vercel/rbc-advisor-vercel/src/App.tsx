@@ -38,7 +38,7 @@ function App() {
 
   const generateSubject = (prompt: string, clientName: string): string => {
     const lower = prompt.toLowerCase();
-    if (lower.includes('christmas')) return `Season\'s Greetings — ${clientName}`;
+    if (lower.includes('christmas')) return `Season's Greetings — ${clientName}`;
     if (lower.includes('hanukkah') || lower.includes('hannukah')) return `Warm Wishes This Hanukkah — ${clientName}`;
     if (lower.includes('new year')) return `Wishing You a Wonderful New Year`;
     if (lower.includes('birthday')) return `Happy Birthday, ${clientName.split(' ')[0]}!`;
@@ -87,7 +87,7 @@ function App() {
 
   const handleSend = () => {
     if (!selectedClient) return;
-    const confirmed = window.alert(
+    window.alert(
       `Email sent successfully!\n\nTo: ${selectedClient.name} <${selectedClient.email}>\nSubject: ${emailSubject}\n\nThis action has been logged in the client activity feed.`
     );
   };
